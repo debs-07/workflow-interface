@@ -1,4 +1,4 @@
-# Workflow Engine Frontend
+# Workflow Interface Frontend
 
 ## Status
 
