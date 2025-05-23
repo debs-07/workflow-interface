@@ -7,10 +7,13 @@ interface PaginationMeta {
   totalPages: number;
 }
 
-export interface GenericResponse<T = null>
-  extends AxiosResponse<{
-    success: boolean;
-    message: string;
-    data: T;
-    meta?: PaginationMeta;
-  }> {}
+export type GenericResponse<T = null> = AxiosResponse<{
+  success: boolean;
+  message: string;
+  data: T;
+  meta?: PaginationMeta;
+}>;
+
+export interface AuthData {
+  token: string;
+}
